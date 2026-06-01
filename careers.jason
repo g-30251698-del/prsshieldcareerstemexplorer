@@ -87,7 +87,7 @@
   "kategori": "Aeroangkasa",
   "maksud": "Mereka bentuk pesawat dan sistem angkasa.",
   "laluan": "STEM → Kejuruteraan Aeroangkasa"
-}
+},k
 {
   "nama": "Pakar Keselamatan Siber",
   "kategori": "Teknologi",
@@ -238,7 +238,6 @@
   "maksud": "Membangunkan peranti Internet of Things.",
   "laluan": "STEM → IoT"
 },
-,
 {
   "nama": "Ahli Aktuari",
   "kategori": "Kewangan",
@@ -388,8 +387,7 @@
   "kategori": "Teknologi",
   "maksud": "Mengurus pembangunan dan operasi sistem.",
   "laluan": "STEM → Sains Komputer"
-}
-,
+},
 {
   "nama":"Pegawai Kesihatan Persekitaran",
   "kategori":"Perubatan",
@@ -831,7 +829,7 @@
   "nama":"Jurutera Pelabuhan",
   "kategori":"Kejuruteraan",
   "maksud":"Mereka bentuk pelabuhan dan jeti.",
-  "laluan":"STEM → Kejuruteraan Awam"
+  "laluan":"STEM → Kejuruteraan Awam"  
 },
 {
   "nama":"Pakar Keselamatan Makanan",
