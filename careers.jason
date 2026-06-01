@@ -238,3 +238,454 @@
   "maksud": "Membangunkan peranti Internet of Things.",
   "laluan": "STEM → IoT"
 },
+,
+{
+  "nama": "Ahli Aktuari",
+  "kategori": "Kewangan",
+  "maksud": "Menganalisis risiko menggunakan matematik dan statistik.",
+  "laluan": "STEM → Matematik → Aktuari"
+},
+{
+  "nama": "Penganalisis Sistem",
+  "kategori": "Teknologi",
+  "maksud": "Menganalisis dan menambah baik sistem komputer.",
+  "laluan": "STEM → Teknologi Maklumat"
+},
+{
+  "nama": "Pentadbir Pangkalan Data",
+  "kategori": "Teknologi",
+  "maksud": "Mengurus data organisasi.",
+  "laluan": "STEM → Sains Komputer"
+},
+{
+  "nama": "Pakar Rangkaian",
+  "kategori": "Teknologi",
+  "maksud": "Mengurus rangkaian komputer dan internet.",
+  "laluan": "STEM → Teknologi Maklumat"
+},
+{
+  "nama": "Pakar Blockchain",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan aplikasi berasaskan blockchain.",
+  "laluan": "STEM → Sains Komputer"
+},
+{
+  "nama": "Jurutera Perisian",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan sistem dan aplikasi komputer.",
+  "laluan": "STEM → Kejuruteraan Perisian"
+},
+{
+  "nama": "Pembangun Permainan",
+  "kategori": "Teknologi",
+  "maksud": "Mencipta permainan komputer dan mudah alih.",
+  "laluan": "STEM → Multimedia"
+},
+{
+  "nama": "Animator 3D",
+  "kategori": "Kreatif",
+  "maksud": "Menghasilkan animasi digital.",
+  "laluan": "STEM → Multimedia"
+},
+{
+  "nama": "Jurutera Marin",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk dan menyelenggara kapal.",
+  "laluan": "STEM → Kejuruteraan Marin"
+},
+{
+  "nama": "Jurutera Nuklear",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mengurus teknologi tenaga nuklear.",
+  "laluan": "STEM → Kejuruteraan Nuklear"
+},
+{
+  "nama": "Pegawai Forensik",
+  "kategori": "Sains",
+  "maksud": "Menganalisis bukti jenayah secara saintifik.",
+  "laluan": "STEM → Sains Forensik"
+},
+{
+  "nama": "Ahli Genetik",
+  "kategori": "Sains",
+  "maksud": "Mengkaji gen dan keturunan manusia.",
+  "laluan": "STEM → Genetik"
+},
+{
+  "nama": "Ahli Mikrobiologi",
+  "kategori": "Sains",
+  "maksud": "Mengkaji mikroorganisma.",
+  "laluan": "STEM → Mikrobiologi"
+},
+{
+  "nama": "Ahli Oseanografi",
+  "kategori": "Sains",
+  "maksud": "Mengkaji lautan dan hidupan marin.",
+  "laluan": "STEM → Oseanografi"
+},
+{
+  "nama": "Pegawai Kawalan Kualiti",
+  "kategori": "Industri",
+  "maksud": "Memastikan produk memenuhi standard.",
+  "laluan": "STEM → Sains Gunaan"
+},
+{
+  "nama": "Teknologis Makmal",
+  "kategori": "Perubatan",
+  "maksud": "Menjalankan ujian makmal.",
+  "laluan": "STEM → Teknologi Makmal Perubatan"
+},
+{
+  "nama": "Ahli Fisioterapi",
+  "kategori": "Perubatan",
+  "maksud": "Membantu pemulihan pergerakan pesakit.",
+  "laluan": "STEM → Fisioterapi"
+},
+{
+  "nama": "Ahli Dietetik",
+  "kategori": "Perubatan",
+  "maksud": "Memberi nasihat pemakanan.",
+  "laluan": "STEM → Dietetik"
+},
+{
+  "nama": "Optometris",
+  "kategori": "Perubatan",
+  "maksud": "Memeriksa kesihatan mata.",
+  "laluan": "STEM → Optometri"
+},
+{
+  "nama": "Radiografer",
+  "kategori": "Perubatan",
+  "maksud": "Mengendalikan peralatan pengimejan perubatan.",
+  "laluan": "STEM → Radiografi"
+},
+{
+  "nama": "Jurutera Automotif",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk dan membaiki kenderaan.",
+  "laluan": "STEM → Kejuruteraan Automotif"
+},
+{
+  "nama": "Jurutera Mekatronik",
+  "kategori": "Kejuruteraan",
+  "maksud": "Menggabungkan mekanikal, elektronik dan komputer.",
+  "laluan": "STEM → Mekatronik"
+},
+{
+  "nama": "Pakar AI",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan kecerdasan buatan.",
+  "laluan": "STEM → AI"
+},
+{
+  "nama": "Pakar Machine Learning",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan model pembelajaran mesin.",
+  "laluan": "STEM → Data Science"
+},
+{
+  "nama": "Pakar DevOps",
+  "kategori": "Teknologi",
+  "maksud": "Mengurus pembangunan dan operasi sistem.",
+  "laluan": "STEM → Sains Komputer"
+}
+,
+{
+  "nama":"Pegawai Kesihatan Persekitaran",
+  "kategori":"Perubatan",
+  "maksud":"Memastikan persekitaran selamat dan sihat.",
+  "laluan":"STEM → Kesihatan Persekitaran"
+},
+{
+  "nama":"Saintis Makanan",
+  "kategori":"Sains",
+  "maksud":"Mengkaji keselamatan dan kualiti makanan.",
+  "laluan":"STEM → Sains Makanan"
+},
+{
+  "nama":"Teknologis Makanan",
+  "kategori":"Sains",
+  "maksud":"Membangunkan produk makanan baharu.",
+  "laluan":"STEM → Teknologi Makanan"
+},
+{
+  "nama":"Ahli Zoologi",
+  "kategori":"Sains",
+  "maksud":"Mengkaji haiwan.",
+  "laluan":"STEM → Zoologi"
+},
+{
+  "nama":"Ahli Botani",
+  "kategori":"Sains",
+  "maksud":"Mengkaji tumbuhan.",
+  "laluan":"STEM → Botani"
+},
+{
+  "nama":"Ahli Ekologi",
+  "kategori":"Sains",
+  "maksud":"Mengkaji hubungan organisma dan alam sekitar.",
+  "laluan":"STEM → Ekologi"
+},
+{
+  "nama":"Pegawai Perhutanan",
+  "kategori":"Sains",
+  "maksud":"Mengurus sumber hutan.",
+  "laluan":"STEM → Perhutanan"
+},
+{
+  "nama":"Pegawai Pertanian",
+  "kategori":"Pertanian",
+  "maksud":"Meningkatkan hasil pertanian.",
+  "laluan":"STEM → Pertanian"
+},
+{
+  "nama":"Ahli Agronomi",
+  "kategori":"Pertanian",
+  "maksud":"Mengkaji tanaman dan tanah.",
+  "laluan":"STEM → Agronomi"
+},
+{
+  "nama":"Pegawai Perikanan",
+  "kategori":"Pertanian",
+  "maksud":"Mengurus sumber perikanan.",
+  "laluan":"STEM → Perikanan"
+},
+{
+  "nama":"Pakar Akuakultur",
+  "kategori":"Pertanian",
+  "maksud":"Menternak hidupan akuatik.",
+  "laluan":"STEM → Akuakultur"
+},
+{
+  "nama":"Juruteknik Elektrik",
+  "kategori":"TVET",
+  "maksud":"Menyelenggara sistem elektrik.",
+  "laluan":"TVET → Elektrik"
+},
+{
+  "nama":"Juruteknik Elektronik",
+  "kategori":"TVET",
+  "maksud":"Membaiki peralatan elektronik.",
+  "laluan":"TVET → Elektronik"
+},
+{
+  "nama":"Juruteknik Komputer",
+  "kategori":"TVET",
+  "maksud":"Menyelenggara komputer dan rangkaian.",
+  "laluan":"TVET → ICT"
+},
+{
+  "nama":"Juruteknik Robotik",
+  "kategori":"TVET",
+  "maksud":"Menyelenggara sistem robotik.",
+  "laluan":"TVET → Robotik"
+},
+{
+  "nama":"Juruteknik Automotif",
+  "kategori":"TVET",
+  "maksud":"Membaiki kenderaan.",
+  "laluan":"TVET → Automotif"
+},
+{
+  "nama":"Juruteknik Kimpalan",
+  "kategori":"TVET",
+  "maksud":"Melakukan kerja kimpalan industri.",
+  "laluan":"TVET → Kimpalan"
+},
+{
+  "nama":"Juruteknik HVAC",
+  "kategori":"TVET",
+  "maksud":"Menyelenggara penghawa dingin dan ventilasi.",
+  "laluan":"TVET → HVAC"
+},
+{
+  "nama":"Juruteknik Pesawat",
+  "kategori":"TVET",
+  "maksud":"Menyelenggara pesawat udara.",
+  "laluan":"TVET → Aeroangkasa"
+},
+{
+  "nama":"Pengawal Trafik Udara",
+  "kategori":"Aviation",
+  "maksud":"Mengawal pergerakan pesawat.",
+  "laluan":"STEM → Penerbangan"
+},
+{
+  "nama":"Juruterbang",
+  "kategori":"Aviation",
+  "maksud":"Mengendalikan pesawat.",
+  "laluan":"STEM → Penerbangan"
+},
+{
+  "nama":"Pegawai Meteorologi",
+  "kategori":"Sains",
+  "maksud":"Menganalisis cuaca dan iklim.",
+  "laluan":"STEM → Meteorologi"
+},
+{
+  "nama":"Pakar GIS",
+  "kategori":"Teknologi",
+  "maksud":"Menganalisis data geografi digital.",
+  "laluan":"STEM → GIS"
+},
+{
+  "nama":"Kartografer",
+  "kategori":"Sains",
+  "maksud":"Menghasilkan peta.",
+  "laluan":"STEM → Geografi"
+},
+{
+  "nama":"Ahli Statistik",
+  "kategori":"Matematik",
+  "maksud":"Menganalisis data statistik.",
+  "laluan":"STEM → Statistik"
+},
+{
+  "nama":"Pensyarah STEM",
+  "kategori":"Pendidikan",
+  "maksud":"Mengajar di institusi pengajian tinggi.",
+  "laluan":"STEM → Pendidikan"
+},
+{
+  "nama":"Guru Matematik",
+  "kategori":"Pendidikan",
+  "maksud":"Mengajar matematik.",
+  "laluan":"STEM → Pendidikan"
+},
+{
+  "nama":"Guru Fizik",
+  "kategori":"Pendidikan",
+  "maksud":"Mengajar fizik.",
+  "laluan":"STEM → Pendidikan"
+},
+{
+  "nama":"Guru Kimia",
+  "kategori":"Pendidikan",
+  "maksud":"Mengajar kimia.",
+  "laluan":"STEM → Pendidikan"
+},
+{
+  "nama":"Guru Biologi",
+  "kategori":"Pendidikan",
+  "maksud":"Mengajar biologi.",
+  "laluan":"STEM → Pendidikan"
+},
+{
+  "nama":"Pakar Tenaga Boleh Baharu",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan tenaga hijau.",
+  "laluan":"STEM → Tenaga Boleh Baharu"
+},
+{"nama":"Jurutera Solar",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mereka bentuk sistem tenaga suria.",
+  "laluan":"STEM → Tenaga Solar"
+},
+{
+  "nama":"Jurutera Angin",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan sistem tenaga angin.",
+  "laluan":"STEM → Tenaga Angin"
+},
+{
+  "nama":"Pakar Smart City",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan bandar pintar.",
+  "laluan":"STEM → Teknologi Bandar Pintar"
+},
+{
+  "nama":"Pakar Digital Twin",
+  "kategori":"Teknologi",
+  "maksud":"Membina model digital aset sebenar.",
+  "laluan":"STEM → Teknologi Digital Twin"
+},
+{
+  "nama":"Pakar AR VR",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan realiti maya dan tambahan.",
+  "laluan":"STEM → Multimedia"
+},
+{
+  "nama":"Pereka Cip",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mereka bentuk cip elektronik.",
+  "laluan":"STEM → Mikroelektronik"
+},
+{
+  "nama":"Jurutera Semikonduktor",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan teknologi cip.",
+  "laluan":"STEM → Semikonduktor"
+},
+{
+  "nama":"Pakar QA Software",
+  "kategori":"Teknologi",
+  "maksud":"Menguji kualiti perisian.",
+  "laluan":"STEM → Sains Komputer"
+},
+{
+  "nama":"Pentester",
+  "kategori":"Teknologi",
+  "maksud":"Menguji keselamatan sistem.",
+  "laluan":"STEM → Keselamatan Siber"
+},
+{
+  "nama":"Pakar Forensik Digital",
+  "kategori":"Teknologi",
+  "maksud":"Menyiasat bukti digital.",
+  "laluan":"STEM → Keselamatan Siber"
+},
+{
+  "nama":"Pakar Kriptografi",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan sistem penyulitan.",
+  "laluan":"STEM → Keselamatan Siber"
+},
+{
+  "nama":"Pengurus Projek IT",
+  "kategori":"Teknologi",
+  "maksud":"Mengurus projek teknologi maklumat.",
+  "laluan":"STEM → IT"
+},
+{
+  "nama":"Pakar ERP",
+  "kategori":"Teknologi",
+  "maksud":"Mengurus sistem perusahaan.",
+  "laluan":"STEM → Sistem Maklumat"
+},
+{
+  "nama":"Pakar Automasi Industri",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mengautomasi proses kilang.",
+  "laluan":"STEM → Automasi"
+},
+{
+  "nama":"Jurutera Industri",
+  "kategori":"Kejuruteraan",
+  "maksud":"Menambah baik operasi industri.",
+  "laluan":"STEM → Kejuruteraan Industri"
+},
+{
+  "nama":"Jurutera Logistik",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mengurus rantaian bekalan.",
+  "laluan":"STEM → Logistik"
+},
+{
+  "nama":"Pakar Supply Chain",
+  "kategori":"Industri",
+  "maksud":"Mengurus aliran bahan dan produk.",
+  "laluan":"STEM → Logistik"
+},
+{
+  "nama":"Pegawai Keselamatan dan Kesihatan",
+  "kategori":"Industri",
+  "maksud":"Memastikan keselamatan tempat kerja.",
+  "laluan":"STEM → OSH"
+},
+{
+  "nama":"Pakar ESG",
+  "kategori":"Industri",
+  "maksud":"Mengurus kelestarian organisasi.",
+  "laluan":"STEM → Kelestarian"
+}
