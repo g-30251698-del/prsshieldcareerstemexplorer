@@ -1,0 +1,240 @@
+{
+  "nama": "Jurutera AI",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan sistem kecerdasan buatan.",
+  "laluan": "STEM → Sains Komputer → AI"
+},
+{
+  "nama": "Saintis Data",
+  "kategori": "Teknologi",
+  "maksud": "Menganalisis data untuk membantu keputusan organisasi.",
+  "laluan": "STEM → Data Science"
+},
+{
+  "nama": "Pakar Keselamatan Siber",
+  "kategori": "Teknologi",
+  "maksud": "Melindungi sistem komputer daripada serangan siber.",
+  "laluan": "STEM → Cyber Security"
+},
+{
+  "nama": "Pembangun Perisian",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan aplikasi dan sistem komputer.",
+  "laluan": "STEM → Sains Komputer"
+},
+{
+  "nama": "Jurutera Mekanikal",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk mesin dan sistem mekanikal.",
+  "laluan": "STEM → Kejuruteraan Mekanikal"
+},
+{
+  "nama": "Jurutera Elektrik",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk sistem elektrik dan elektronik.",
+  "laluan": "STEM → Kejuruteraan Elektrik"
+},
+{
+  "nama": "Jurutera Kimia",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mengaplikasikan kimia dalam proses industri.",
+  "laluan": "STEM → Kejuruteraan Kimia"
+},
+{
+  "nama": "Arkitek",
+  "kategori": "Reka Bentuk",
+  "maksud": "Mereka bentuk bangunan dan ruang.",
+  "laluan": "STEM → Seni Bina"
+},
+{
+  "nama": "Ahli Farmasi",
+  "kategori": "Perubatan",
+  "maksud": "Mengurus dan membekalkan ubat kepada pesakit.",
+  "laluan": "STEM → Farmasi"
+},
+{
+  "nama": "Veterinar",
+  "kategori": "Perubatan",
+  "maksud": "Merawat haiwan dan menjaga kesihatan mereka.",
+  "laluan": "STEM → Veterinar"
+},
+{
+  "nama": "Saintis Alam Sekitar",
+  "kategori": "Sains",
+  "maksud": "Mengkaji dan melindungi alam sekitar.",
+  "laluan": "STEM → Sains Alam Sekitar"
+},
+{
+  "nama": "Ahli Geologi",
+  "kategori": "Sains",
+  "maksud": "Mengkaji struktur dan bahan bumi.",
+  "laluan": "STEM → Geologi"
+},
+{
+  "nama": "Pakar Bioteknologi",
+  "kategori": "Sains",
+  "maksud": "Menggunakan organisma hidup untuk inovasi teknologi.",
+  "laluan": "STEM → Bioteknologi"
+},
+{
+  "nama": "Juruterbang",
+  "kategori": "Aeroangkasa",
+  "maksud": "Mengendalikan pesawat udara.",
+  "laluan": "STEM → Latihan Penerbangan"
+},
+{
+  "nama": "Jurutera Aeroangkasa",
+  "kategori": "Aeroangkasa",
+  "maksud": "Mereka bentuk pesawat dan sistem angkasa.",
+  "laluan": "STEM → Kejuruteraan Aeroangkasa"
+}
+{
+  "nama": "Pakar Keselamatan Siber",
+  "kategori": "Teknologi",
+  "maksud": "Melindungi sistem komputer daripada ancaman siber.",
+  "laluan": "STEM → Keselamatan Siber"
+},
+{
+  "nama": "Jurutera Robotik",
+  "kategori": "Teknologi",
+  "maksud": "Mereka bentuk dan membina robot.",
+  "laluan": "STEM → Kejuruteraan Mekatronik"
+},
+{
+  "nama": "Jurutera Aeroangkasa",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk pesawat dan kapal angkasa.",
+  "laluan": "STEM → Kejuruteraan Aeroangkasa"
+},
+{
+  "nama": "Arkitek",
+  "kategori": "Reka Bentuk",
+  "maksud": "Mereka bentuk bangunan dan ruang.",
+  "laluan": "STEM → Seni Bina"
+},
+{
+  "nama": "Ahli Farmasi",
+  "kategori": "Perubatan",
+  "maksud": "Mengurus dan membekalkan ubat.",
+  "laluan": "STEM → Farmasi"
+},
+{
+  "nama": "Jururawat",
+  "kategori": "Perubatan",
+  "maksud": "Menjaga dan merawat pesakit.",
+  "laluan": "STEM → Kejururawatan"
+},
+{
+  "nama": "Doktor Gigi",
+  "kategori": "Perubatan",
+  "maksud": "Merawat kesihatan gigi dan mulut.",
+  "laluan": "STEM → Pergigian"
+},
+{
+  "nama": "Veterinar",
+  "kategori": "Perubatan",
+  "maksud": "Merawat haiwan.",
+  "laluan": "STEM → Veterinar"
+},
+{
+  "nama": "Ahli Bioteknologi",
+  "kategori": "Sains",
+  "maksud": "Menggunakan organisma hidup untuk inovasi.",
+  "laluan": "STEM → Bioteknologi"
+},
+{
+  "nama": "Ahli Kimia",
+  "kategori": "Sains",
+  "maksud": "Mengkaji bahan dan tindak balas kimia.",
+  "laluan": "STEM → Kimia"
+},
+{
+  "nama": "Ahli Fizik",
+  "kategori": "Sains",
+  "maksud": "Mengkaji hukum alam dan tenaga.",
+  "laluan": "STEM → Fizik"
+},
+{
+  "nama": "Ahli Geologi",
+  "kategori": "Sains",
+  "maksud": "Mengkaji struktur bumi.",
+  "laluan": "STEM → Geologi"
+},
+{
+  "nama": "Ahli Meteorologi",
+  "kategori": "Sains",
+  "maksud": "Meramal cuaca dan iklim.",
+  "laluan": "STEM → Meteorologi"
+},
+{
+  "nama": "Ahli Astronomi",
+  "kategori": "Sains",
+  "maksud": "Mengkaji bintang dan alam semesta.",
+  "laluan": "STEM → Astronomi"
+},
+{
+  "nama": "Jurutera Elektrik",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk sistem elektrik.",
+  "laluan": "STEM → Kejuruteraan Elektrik"
+},
+{
+  "nama": "Jurutera Elektronik",
+  "kategori": "Kejuruteraan",
+  "maksud": "Membangunkan peranti elektronik.",
+  "laluan": "STEM → Kejuruteraan Elektronik"
+},
+{
+  "nama": "Jurutera Mekanikal",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk mesin dan sistem mekanikal.",
+  "laluan": "STEM → Kejuruteraan Mekanikal"
+},
+{
+  "nama": "Jurutera Kimia",
+  "kategori": "Kejuruteraan",
+  "maksud": "Membangunkan proses industri kimia.",
+  "laluan": "STEM → Kejuruteraan Kimia"
+},
+{
+  "nama": "Jurutera Petroleum",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mengurus eksplorasi minyak dan gas.",
+  "laluan": "STEM → Kejuruteraan Petroleum"
+},
+{
+  "nama": "Jurutera Alam Sekitar",
+  "kategori": "Kejuruteraan",
+  "maksud": "Menyelesaikan masalah alam sekitar.",
+  "laluan": "STEM → Kejuruteraan Alam Sekitar"
+},
+{
+  "nama": "Pembangun Perisian",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan aplikasi dan sistem.",
+  "laluan": "STEM → Sains Komputer"
+},
+{
+  "nama": "Pereka UI UX",
+  "kategori": "Teknologi",
+  "maksud": "Mereka bentuk pengalaman pengguna digital.",
+  "laluan": "STEM → Multimedia"
+},
+{
+  "nama": "Saintis Data Raya",
+  "kategori": "Teknologi",
+  "maksud": "Menganalisis data berskala besar.",
+  "laluan": "STEM → Data Science"
+},
+{
+  "nama": "Pakar Cloud Computing",
+  "kategori": "Teknologi",
+  "maksud": "Mengurus sistem awan.",
+  "laluan": "STEM → Teknologi Maklumat"
+},
+{
+  "nama": "Pakar IoT",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan peranti Internet of Things.",
+  "laluan": "STEM → IoT"
+},
