@@ -228,8 +228,18 @@ riasec.C
 let result=Object.keys(riasec)
 .find(key=>riasec[key]===max);
 
+let career="";
+
+if(result==="R") career="Jurutera Awam, Juruteknik, Mekanik";
+if(result==="I") career="Saintis Data, Doktor, Penyelidik";
+if(result==="A") career="Pereka Grafik, Animator, Arkitek";
+if(result==="S") career="Guru, Kaunselor, Jururawat";
+if(result==="E") career="Usahawan, Pengurus, Pegawai Pemasaran";
+if(result==="C") career="Akauntan, Kerani, Pentadbir";
+
 document.getElementById("riasecResult").innerHTML=
-"<h3>Kod Dominan: "+result+"</h3>";
+"<h3>Kod Dominan: "+result+"</h3>"+
+"<p><b>Cadangan Kerjaya:</b> "+career+"</p>";
 }
 </script>
 </body>
