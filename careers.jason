@@ -688,4 +688,160 @@
   "kategori":"Industri",
   "maksud":"Mengurus kelestarian organisasi.",
   "laluan":"STEM → Kelestarian"
+},
+{
+  "nama":"Ahli Matematik",
+  "kategori":"Matematik",
+  "maksud":"Mengkaji dan menyelesaikan masalah matematik.",
+  "laluan":"STEM → Matematik"
+},
+{
+  "nama":"Penganalisis Data",
+  "kategori":"Teknologi",
+  "maksud":"Menganalisis data untuk membuat keputusan.",
+  "laluan":"STEM → Data Analytics"
+},
+{
+  "nama":"Jurutera Telekomunikasi",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan sistem komunikasi.",
+  "laluan":"STEM → Telekomunikasi"
+},
+{
+  "nama":"Jurutera Struktur",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mereka bentuk struktur bangunan dan jambatan.",
+  "laluan":"STEM → Kejuruteraan Awam"
+},
+{
+  "nama":"Jurutera Air",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mengurus sistem bekalan air.",
+  "laluan":"STEM → Kejuruteraan Awam"
+},
+{
+  "nama":"Jurutera Bahan",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan bahan baharu untuk industri.",
+  "laluan":"STEM → Kejuruteraan Bahan"
+},
+{
+  "nama":"Pakar Nanoteknologi",
+  "kategori":"Sains",
+  "maksud":"Mengkaji bahan pada skala nano.",
+  "laluan":"STEM → Nanoteknologi"
+},
+{
+  "nama":"Ahli Bioinformatik",
+  "kategori":"Sains",
+  "maksud":"Menggabungkan biologi dan sains komputer.",
+  "laluan":"STEM → Bioinformatik"
+},
+{
+  "nama":"Saintis Alam Sekitar",
+  "kategori":"Sains",
+  "maksud":"Mengkaji dan melindungi alam sekitar.",
+  "laluan":"STEM → Sains Alam Sekitar"
+},
+{
+  "nama":"Pegawai Hidrologi",
+  "kategori":"Sains",
+  "maksud":"Mengkaji sumber air dan sungai.",
+  "laluan":"STEM → Hidrologi"
+},
+{
+  "nama":"Ahli Seismologi",
+  "kategori":"Sains",
+  "maksud":"Mengkaji gempa bumi.",
+  "laluan":"STEM → Geofizik"
+},
+{
+  "nama":"Ahli Geofizik",
+  "kategori":"Sains",
+  "maksud":"Mengkaji struktur bumi menggunakan fizik.",
+  "laluan":"STEM → Geofizik"
+},
+{
+  "nama":"Pakar Drone",
+  "kategori":"Teknologi",
+  "maksud":"Mengendalikan dan membangunkan dron.",
+  "laluan":"STEM → Teknologi Drone"
+},
+{
+  "nama":"Juruteknik Drone",
+  "kategori":"TVET",
+  "maksud":"Menyelenggara sistem dron.",
+  "laluan":"TVET → Drone"
+},
+{
+  "nama":"Pakar E-Dagang",
+  "kategori":"Teknologi",
+  "maksud":"Mengurus platform jualan digital.",
+  "laluan":"STEM → Sistem Maklumat"
+},
+{
+  "nama":"Pakar Automasi Rumah",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan sistem rumah pintar.",
+  "laluan":"STEM → IoT"
+},
+{
+  "nama":"Pakar Realiti Maya",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan aplikasi VR.",
+  "laluan":"STEM → Multimedia"
+},
+{
+  "nama":"Pakar Realiti Tambahan",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan aplikasi AR.",
+  "laluan":"STEM → Multimedia"
+},
+{
+  "nama":"Jurutera Kereta Elektrik",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan teknologi EV.",
+  "laluan":"STEM → Automotif"
+},
+{
+  "nama":"Pakar Bateri",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan teknologi penyimpanan tenaga.",
+  "laluan":"STEM → Kejuruteraan Kimia"
+},
+{
+  "nama":"Pegawai Teknologi Pendidikan",
+  "kategori":"Pendidikan",
+  "maksud":"Mengurus teknologi dalam pendidikan.",
+  "laluan":"STEM → Teknologi Pendidikan"
+},
+{
+  "nama":"Pakar Pembelajaran Digital",
+  "kategori":"Pendidikan",
+  "maksud":"Membangunkan kandungan pembelajaran digital.",
+  "laluan":"STEM → Teknologi Pendidikan"
+},
+{
+  "nama":"Jurutera Rel",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan sistem kereta api.",
+  "laluan":"STEM → Kejuruteraan Pengangkutan"
+},
+{
+  "nama":"Jurutera Pelabuhan",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mereka bentuk pelabuhan dan jeti.",
+  "laluan":"STEM → Kejuruteraan Awam"
+},
+{
+  "nama":"Pakar Keselamatan Makanan",
+  "kategori":"Sains",
+  "maksud":"Memastikan makanan selamat dimakan.",
+  "laluan":"STEM → Sains Makanan"
+},
+{
+  "nama":"Pakar Bioperubatan",
+  "kategori":"Perubatan",
+  "maksud":"Membangunkan teknologi perubatan.",
+  "laluan":"STEM → Kejuruteraan Bioperubatan"
 }
