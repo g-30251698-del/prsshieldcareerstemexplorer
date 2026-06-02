@@ -353,12 +353,6 @@ document.getElementById("visitorMsg").value;
 let pelawat =
 JSON.parse(localStorage.getItem("pelawat")) || [];
 
-pelawat.push({
-nama:nama,
-komen:komen,
-tarikh:new Date().toLocaleDateString()
-});
-
 fetch("https://script.google.com/macros/s/AKfycbxgjL1dDDQWW7ZXhos6PoHYMmzs1uxnNbXtHaC0sg-FeB1X-j8cIpDJ0-1e4J-9_F8w/exec", {
   method: "POST",
   headers: {
