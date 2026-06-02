@@ -105,58 +105,111 @@ document.getElementById('search').addEventListener('keypress', function(e){
 
 if(page==="dashboard"){
 document.getElementById("result").innerHTML=`
-<h2>📊 Dashboard PRS SHIELD</h2>
 
-<div class="card">
-<h3>Statistik Pengunjung</h3>
+<div class="bg-white rounded-xl p-6 shadow mb-4">
+<h2 class="text-2xl font-bold mb-4">📊 Dashboard PRS SHIELD</h2>
 
-<p>👥 Jumlah Pengunjung:
-<span id="visitorCount"></span></p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-<p>📅 Tarikh Hari Ini:
-${new Date().toLocaleDateString('ms-MY')}</p>
-
-<p>⏰ Masa Semasa:
-${new Date().toLocaleTimeString('ms-MY')}</p>
-
+<div class="bg-gray-50 p-4 rounded-lg">
+<h3 class="font-semibold">👥 Jumlah Pengunjung</h3>
+<p class="text-3xl font-bold text-blue-600" id="visitorCount">1</p>
 </div>
 
-<div class="card">
-<h3>Analisis Minat Kerjaya</h3>
+<div class="bg-gray-50 p-4 rounded-lg">
+<h3 class="font-semibold">📅 Tarikh Hari Ini</h3>
+<p id="todayDate"></p>
+</div>
 
+<div class="bg-gray-50 p-4 rounded-lg">
+<h3 class="font-semibold">⏰ Masa Semasa</h3>
+<p id="currentTime"></p>
+</div>
+
+</div>
+</div>
+
+<div class="bg-white rounded-xl p-6 shadow mb-4">
+<h3 class="text-xl font-bold mb-4">📈 Analisis Minat Kerjaya STEM</h3>
+
+<div class="mb-3">
 <p>🤖 AI & Data Science</p>
-<div style="background:#ddd;height:20px;border-radius:10px;">
-<div style="width:75%;background:#4CAF50;height:20px;border-radius:10px;"></div>
+<div class="w-full bg-gray-200 rounded-full h-4">
+<div class="bg-green-500 h-4 rounded-full" style="width:75%"></div>
+</div>
 </div>
 
+<div class="mb-3">
 <p>🔒 Cyber Security</p>
-<div style="background:#ddd;height:20px;border-radius:10px;">
-<div style="width:60%;background:#2196F3;height:20px;border-radius:10px;"></div>
+<div class="w-full bg-gray-200 rounded-full h-4">
+<div class="bg-blue-500 h-4 rounded-full" style="width:60%"></div>
+</div>
 </div>
 
+<div class="mb-3">
 <p>⚙️ Kejuruteraan</p>
-<div style="background:#ddd;height:20px;border-radius:10px;">
-<div style="width:80%;background:#FF9800;height:20px;border-radius:10px;"></div>
+<div class="w-full bg-gray-200 rounded-full h-4">
+<div class="bg-orange-500 h-4 rounded-full" style="width:80%"></div>
+</div>
 </div>
 
 </div>
 
-<div class="card">
-<h3>Kerjaya Popular</h3>
-<ul>
+<div class="bg-white rounded-xl p-6 shadow mb-4">
+<h3 class="text-xl font-bold mb-4">🔥 Kerjaya STEM Popular</h3>
+
+<ul class="list-disc ml-6">
 <li>AI Engineer</li>
 <li>Data Scientist</li>
 <li>Cyber Security Analyst</li>
 <li>Robotics Engineer</li>
 <li>Aerospace Engineer</li>
+<li>Software Engineer</li>
 </ul>
+
 </div>
+
+<div class="bg-white rounded-xl p-6 shadow">
+<h3 class="text-xl font-bold mb-4">📝 Buku Pengunjung Maya</h3>
+
+<input
+id="visitorName"
+type="text"
+placeholder="Nama anda"
+class="w-full border p-2 rounded mb-2">
+
+<textarea
+id="visitorComment"
+placeholder="Tulis komen atau cadangan"
+class="w-full border p-2 rounded mb-2"></textarea>
+
+<button
+onclick="addComment()"
+class="bg-purple-600 text-white px-4 py-2 rounded">
+Hantar
+</button>
+
+<div id="commentList" class="mt-4"></div>
+
+</div>
+
 `;
 
-document.getElementById("visitorCount").innerText =
-localStorage.getItem("visits") || 1;
-}
+document.getElementById("todayDate").innerHTML=
+new Date().toLocaleDateString("ms-MY");
 
+setInterval(()=>{
+document.getElementById("currentTime").innerHTML=
+new Date().toLocaleTimeString("ms-MY");
+},1000);
+
+let count=localStorage.getItem("visitorCount")||0;
+count++;
+localStorage.setItem("visitorCount",count);
+document.getElementById("visitorCount").innerHTML=count;
+
+loadComments();
+}
 if(page==="riasec"){
 document.getElementById("result").innerHTML="<h2>Ujian RIASEC</h2><p>Inventori minat kerjaya akan dipaparkan di sini.</p>";
 }
