@@ -110,6 +110,41 @@ document.getElementById('search').addEventListener('keypress', function(e){
    '<h2>Tiada rekod</h2><p>Tambah data JSON untuk mencapai 1000+ kerjaya.</p>';
  }
 });
+function showPage(page){
+
+if(page==="dashboard"){
+document.getElementById("result").innerHTML="<h2>Dashboard</h2><p>Selamat datang ke Dashboard PRS SHIELD.</p>";
+}
+
+if(page==="spm"){
+document.getElementById("result").innerHTML="<h2>Hala Tuju Selepas SPM</h2><ul><li>STEM → Matrikulasi → Universiti</li><li>TVET → Kolej Kemahiran</li></ul>";
+}
+
+if(page==="riasec"){
+document.getElementById("result").innerHTML="<h2>Ujian RIASEC</h2><p>Inventori minat kerjaya akan dipaparkan di sini.</p>";
+}
+
+if(page==="tvet"){
+document.getElementById("result").innerHTML="<h2>IPTA/IPTS/TVET</h2><p>Maklumat kemasukan universiti dan TVET.</p>";
+}
+
+if(page==="biasiswa"){
+document.getElementById("result").innerHTML="<h2>Biasiswa</h2><p>Senarai biasiswa untuk pelajar.</p>";
+}
+
+if(page==="future"){
+document.getElementById("result").innerHTML="<h2>STEM Future Jobs</h2><p>AI Engineer, Data Scientist, Robotics Engineer dan lain-lain.</p>";
+}
+
+if(page==="guru"){
+document.getElementById("result").innerHTML="<h2>Dashboard Guru</h2><p>Statistik dan laporan murid.</p>";
+}
+
+if(page==="career"){
+document.getElementById("search").focus();
+}
+
+}
 </script>
 </body>
 </html>
