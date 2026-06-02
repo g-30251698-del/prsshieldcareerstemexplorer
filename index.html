@@ -304,6 +304,48 @@ document.getElementById("search").focus();
 }
 
 }
+ function addComment(){
+
+const name=document.getElementById("visitorName").value;
+const comment=document.getElementById("visitorComment").value;
+
+if(!name || !comment) return;
+
+let comments=
+JSON.parse(localStorage.getItem("prsComments")||"[]");
+
+comments.unshift({
+name:name,
+comment:comment
+});
+
+localStorage.setItem(
+"prsComments",
+JSON.stringify(comments)
+);
+
+loadComments();
+
+document.getElementById("visitorName").value="";
+document.getElementById("visitorComment").value="";
+}
+
+function loadComments(){
+
+const list=document.getElementById("commentList");
+
+if(!list) return;
+
+let comments=
+JSON.parse(localStorage.getItem("prsComments")||"[]");
+
+list.innerHTML=comments.map(c=>`
+<div class="border rounded p-3 mb-2 bg-gray-50">
+<b>👤 ${c.name}</b><br>
+${c.comment}
+</div>
+`).join("");
+}
 </script>
 </body>
 </html>
