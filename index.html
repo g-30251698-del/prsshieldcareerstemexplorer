@@ -578,6 +578,128 @@ ${c.comment}
 </div>
 `).join("");
 }
+ function calculateRIASEC(){
+
+let score={
+R:0,I:0,A:0,S:0,E:0,C:0
+};
+
+const selects=
+document.querySelectorAll(
+"#riasecQuestions select"
+);
+
+selects.forEach(s=>{
+score[s.dataset.type]+=Number(s.value);
+});
+
+const sorted=
+Object.entries(score)
+.sort((a,b)=>b[1]-a[1]);
+
+const code=
+sorted[0][0]+
+sorted[1][0]+
+sorted[2][0];
+
+let careers=[];
+
+if(code.includes("I")){
+careers.push(
+"🤖 AI Engineer",
+"📊 Data Scientist",
+"🔬 Saintis",
+"💻 Software Engineer"
+);
+}
+
+if(code.includes("R")){
+careers.push(
+"⚙️ Jurutera Mekanikal",
+"🚀 Jurutera Aeroangkasa",
+"🤖 Jurutera Robotik"
+);
+}
+
+if(code.includes("S")){
+careers.push(
+"👨‍⚕️ Doktor",
+"👩‍🏫 Guru",
+"🧠 Kaunselor"
+);
+}
+
+if(code.includes("E")){
+careers.push(
+"💼 Usahawan",
+"📈 Pengurus Projek",
+"🏢 Pengurus Perniagaan"
+);
+}
+
+if(code.includes("A")){
+careers.push(
+"🎨 Pereka Grafik",
+"🎬 Animator",
+"📸 Pereka Multimedia"
+);
+}
+
+if(code.includes("C")){
+careers.push(
+"📋 Akauntan",
+"🏦 Pegawai Bank",
+"📑 Pentadbir"
+);
+}
+
+document.getElementById("riasecResult").innerHTML=`
+
+<div class="bg-green-50 border rounded-xl p-5">
+
+<h3 class="text-xl font-bold mb-3">
+🏆 Profil Kerjaya Anda
+</h3>
+
+<p class="text-lg">
+Kod Holland:
+<b>${code}</b>
+</p>
+
+<h3 class="font-bold mt-4">
+🎓 Cadangan Kerjaya
+</h3>
+
+<ul class="list-disc ml-6">
+${[...new Set(careers)]
+.map(c=>`<li>${c}</li>`).join("")}
+</ul>
+
+<h3 class="font-bold mt-4">
+🏫 Cadangan Laluan Pengajian
+</h3>
+
+<ul class="list-disc ml-6">
+<li>UPU Online</li>
+<li>Pendidikan MARA</li>
+<li>TVET Malaysia</li>
+<li>IPTS Swasta</li>
+</ul>
+
+<h3 class="font-bold mt-4">
+💰 Cadangan Biasiswa STEM
+</h3>
+
+<ul class="list-disc ml-6">
+<li>JPA</li>
+<li>MARA</li>
+<li>PETRONAS</li>
+<li>Yayasan Khazanah</li>
+<li>Bank Negara</li>
+</ul>
+
+</div>
+`;
 </script>
 </body>
 </html>
