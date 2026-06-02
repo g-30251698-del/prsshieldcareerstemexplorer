@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PRS SHIELD Career STEM Explorer</title>
+<title>UBK & PRS SHIELD Career STEM Explorer</title>
 <style>
 body{margin:0;font-family:Segoe UI,Arial;background:#f4f6fb}
 header{background:linear-gradient(135deg,#3b0a73,#18003d);color:white;padding:15px}
@@ -196,7 +196,46 @@ if(page==="tvet"){
     `;
 }
 if(page==="biasiswa"){
-document.getElementById("result").innerHTML="<h2>Biasiswa</h2><p>Senarai biasiswa untuk pelajar.</p>";
+    document.getElementById("result").innerHTML=`
+    <h2>Biasiswa Dalam & Luar Negara</h2>
+    <p>Pilih biasiswa yang sesuai dengan kelayakan anda.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+
+        <a href="https://esilav2.jpa.gov.my/" target="_blank" class="p-4 bg-blue-50 rounded-xl border">
+            🎓 JPA
+        </a>
+
+        <a href="https://www.mara.gov.my/" target="_blank" class="p-4 bg-green-50 rounded-xl border">
+            🏛️ MARA
+        </a>
+
+        <a href="https://www.yayasankhazanah.com.my/" target="_blank" class="p-4 bg-purple-50 rounded-xl border">
+            🌏 Yayasan Khazanah
+        </a>
+
+        <a href="https://www.bnm.gov.my/careers/scholarships" target="_blank" class="p-4 bg-yellow-50 rounded-xl border">
+            💰 Bank Negara Kijang
+        </a>
+
+        <a href="https://www.petronas.com/" target="_blank" class="p-4 bg-red-50 rounded-xl border">
+            ⛽ PETRONAS PESP
+        </a>
+
+        <a href="https://scholarships.tnb.com.my/" target="_blank" class="p-4 bg-orange-50 rounded-xl border">
+            ⚡ Yayasan TNB
+        </a>
+
+        <a href="https://www.yayasanuem.com.my/" target="_blank" class="p-4 bg-cyan-50 rounded-xl border">
+            🏆 Yayasan UEM
+        </a>
+
+        <a href="https://www.studymalaysia.com/scholarships/" target="_blank" class="p-4 bg-indigo-50 rounded-xl border">
+            🔍 Carian Biasiswa
+        </a>
+
+    </div>
+    `;
 }
 
 if(page==="future"){
