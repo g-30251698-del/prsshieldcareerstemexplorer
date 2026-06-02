@@ -113,7 +113,57 @@ document.getElementById('search').addEventListener('keypress', function(e){
 function showPage(page){
 
 if(page==="dashboard"){
-document.getElementById("result").innerHTML="<h2>Dashboard</h2><p>Selamat datang ke Dashboard PRS SHIELD.</p>";
+document.getElementById("result").innerHTML=`
+<h2>📊 Dashboard PRS SHIELD</h2>
+
+<div class="card">
+<h3>Statistik Pengunjung</h3>
+
+<p>👥 Jumlah Pengunjung:
+<span id="visitorCount"></span></p>
+
+<p>📅 Tarikh Hari Ini:
+${new Date().toLocaleDateString('ms-MY')}</p>
+
+<p>⏰ Masa Semasa:
+${new Date().toLocaleTimeString('ms-MY')}</p>
+
+</div>
+
+<div class="card">
+<h3>Analisis Minat Kerjaya</h3>
+
+<p>🤖 AI & Data Science</p>
+<div style="background:#ddd;height:20px;border-radius:10px;">
+<div style="width:75%;background:#4CAF50;height:20px;border-radius:10px;"></div>
+</div>
+
+<p>🔒 Cyber Security</p>
+<div style="background:#ddd;height:20px;border-radius:10px;">
+<div style="width:60%;background:#2196F3;height:20px;border-radius:10px;"></div>
+</div>
+
+<p>⚙️ Kejuruteraan</p>
+<div style="background:#ddd;height:20px;border-radius:10px;">
+<div style="width:80%;background:#FF9800;height:20px;border-radius:10px;"></div>
+</div>
+
+</div>
+
+<div class="card">
+<h3>Kerjaya Popular</h3>
+<ul>
+<li>AI Engineer</li>
+<li>Data Scientist</li>
+<li>Cyber Security Analyst</li>
+<li>Robotics Engineer</li>
+<li>Aerospace Engineer</li>
+</ul>
+</div>
+`;
+
+document.getElementById("visitorCount").innerText =
+localStorage.getItem("visits") || 1;
 }
 
 if(page==="spm"){
