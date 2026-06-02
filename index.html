@@ -210,8 +210,138 @@ document.getElementById("visitorCount").innerHTML=count;
 
 loadComments();
 }
-if(page==="riasec"){
-document.getElementById("result").innerHTML="<h2>Ujian RIASEC</h2><p>Inventori minat kerjaya akan dipaparkan di sini.</p>";
+if(page==="inventori"){
+
+document.getElementById("result").innerHTML=`
+
+<h2 class="text-2xl font-bold mb-4">
+🧠 Inventori Minat Kerjaya RIASEC
+</h2>
+
+<p class="mb-4">
+Jawab semua soalan dengan jujur untuk mendapatkan cadangan kerjaya STEM yang sesuai.
+</p>
+
+<div id="riasecQuestions"></div>
+
+<button
+onclick="calculateRIASEC()"
+class="bg-purple-600 text-white px-4 py-2 rounded mt-4">
+Lihat Keputusan
+</button>
+
+<div id="riasecResult" class="mt-6"></div>
+
+`;
+
+const questions=[
+
+// REALISTIC
+{q:"Saya suka membaiki mesin.",type:"R"},
+{q:"Saya suka menggunakan alatan teknikal.",type:"R"},
+{q:"Saya suka kerja luar bangunan.",type:"R"},
+{q:"Saya suka memasang komponen elektronik.",type:"R"},
+{q:"Saya suka mengendalikan mesin.",type:"R"},
+{q:"Saya suka aktiviti pertanian.",type:"R"},
+{q:"Saya suka membina sesuatu dengan tangan.",type:"R"},
+{q:"Saya suka kerja kejuruteraan.",type:"R"},
+{q:"Saya suka robotik.",type:"R"},
+{q:"Saya suka menyelenggara peralatan.",type:"R"},
+
+// INVESTIGATIVE
+{q:"Saya suka menyelesaikan masalah sukar.",type:"I"},
+{q:"Saya suka eksperimen sains.",type:"I"},
+{q:"Saya suka matematik.",type:"I"},
+{q:"Saya suka menganalisis data.",type:"I"},
+{q:"Saya suka penyelidikan.",type:"I"},
+{q:"Saya suka mencari punca masalah.",type:"I"},
+{q:"Saya suka teknologi baharu.",type:"I"},
+{q:"Saya suka bidang AI.",type:"I"},
+{q:"Saya suka memerhati fenomena alam.",type:"I"},
+{q:"Saya suka berfikir secara logik.",type:"I"},
+
+// ARTISTIC
+{q:"Saya suka melukis.",type:"A"},
+{q:"Saya suka menghasilkan video.",type:"A"},
+{q:"Saya suka fotografi.",type:"A"},
+{q:"Saya suka muzik.",type:"A"},
+{q:"Saya suka animasi.",type:"A"},
+{q:"Saya suka reka grafik.",type:"A"},
+{q:"Saya suka menulis.",type:"A"},
+{q:"Saya suka idea kreatif.",type:"A"},
+{q:"Saya suka seni persembahan.",type:"A"},
+{q:"Saya suka mencipta sesuatu yang unik.",type:"A"},
+
+// SOCIAL
+{q:"Saya suka membantu orang lain.",type:"S"},
+{q:"Saya suka mengajar.",type:"S"},
+{q:"Saya suka mendengar masalah orang.",type:"S"},
+{q:"Saya suka kerja berkumpulan.",type:"S"},
+{q:"Saya suka aktiviti sukarelawan.",type:"S"},
+{q:"Saya suka membimbing rakan.",type:"S"},
+{q:"Saya suka berkomunikasi.",type:"S"},
+{q:"Saya suka menjaga kebajikan orang.",type:"S"},
+{q:"Saya suka melatih orang lain.",type:"S"},
+{q:"Saya suka aktiviti kemasyarakatan.",type:"S"},
+
+// ENTERPRISING
+{q:"Saya suka memimpin kumpulan.",type:"E"},
+{q:"Saya suka berniaga.",type:"E"},
+{q:"Saya suka membuat keputusan.",type:"E"},
+{q:"Saya suka menjual produk.",type:"E"},
+{q:"Saya suka berunding.",type:"E"},
+{q:"Saya suka mempengaruhi orang.",type:"E"},
+{q:"Saya suka bercakap di khalayak.",type:"E"},
+{q:"Saya suka mengurus projek.",type:"E"},
+{q:"Saya suka menjadi ketua.",type:"E"},
+{q:"Saya suka aktiviti keusahawanan.",type:"E"},
+
+// CONVENTIONAL
+{q:"Saya suka menyusun fail.",type:"C"},
+{q:"Saya suka kerja pejabat.",type:"C"},
+{q:"Saya suka mengurus rekod.",type:"C"},
+{q:"Saya suka mengikut prosedur.",type:"C"},
+{q:"Saya suka menyemak data.",type:"C"},
+{q:"Saya suka ketepatan maklumat.",type:"C"},
+{q:"Saya suka spreadsheet.",type:"C"},
+{q:"Saya suka mengurus dokumen.",type:"C"},
+{q:"Saya suka jadual yang teratur.",type:"C"},
+{q:"Saya suka kerja perkeranian.",type:"C"}
+
+];
+
+const randomQuestions =
+questions.sort(()=>Math.random()-0.5);
+
+let html="";
+
+randomQuestions.forEach((item,index)=>{
+
+html += `
+<div class="bg-white p-3 rounded shadow mb-2">
+
+<p>${index+1}. ${item.q}</p>
+
+<select
+id="q${index}"
+data-type="${item.type}"
+class="border p-2 rounded mt-2">
+
+<option value="0">Pilih</option>
+<option value="1">Sangat Tidak Setuju</option>
+<option value="2">Tidak Setuju</option>
+<option value="3">Setuju</option>
+<option value="4">Sangat Setuju</option>
+
+</select>
+
+</div>
+`;
+
+});
+
+document.getElementById("riasecQuestions").innerHTML=html;
+
 }
 
 if(page==="tvet"){
