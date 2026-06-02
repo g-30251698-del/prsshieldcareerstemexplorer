@@ -45,7 +45,9 @@ input{width:100%;padding:14px;font-size:18px}
 
 <a href="#" onclick="showPage('guru')">Dashboard Guru</a>
 </div>
-
+<a href="#" onclick="showPage('pelawat')">
+📖 Buku Pelawat Maya
+</a>
 <div class="main">
 <div class="card">
 <input id="search" placeholder="Cari kerjaya, contoh: doktor, jurutera AI, saintis data"
@@ -183,7 +185,32 @@ document.getElementById("result").innerHTML=`
 <p>Status: Aktif</p>
 `;
 }
+if(page==="pelawat"){
+document.getElementById("result").innerHTML=`
+<h2>📖 Buku Pelawat Maya</h2>
 
+<input id="visitorName" placeholder="Nama">
+<br><br>
+
+<textarea id="visitorMsg"
+placeholder="Tulis komen atau cadangan"
+rows="4"
+style="width:100%">
+</textarea>
+
+<br><br>
+
+<button onclick="saveVisitor()">
+Hantar
+</button>
+
+<hr>
+
+<div id="visitorList"></div>
+`;
+
+loadVisitors();
+}
 if(page==="riasec"){
 document.getElementById("result").innerHTML=`
 <h2>Inventori Minat Kerjaya (RIASEC)</h2>
@@ -303,6 +330,58 @@ visitorCount = parseInt(visitorCount) + 1;
 }
 
 localStorage.setItem("visitorCount", visitorCount);
+ function saveVisitor(){
+
+let nama =
+document.getElementById("visitorName").value;
+
+let komen =
+document.getElementById("visitorMsg").value;
+
+let pelawat =
+JSON.parse(localStorage.getItem("pelawat")) || [];
+
+pelawat.push({
+nama:nama,
+komen:komen,
+tarikh:new Date().toLocaleDateString()
+});
+
+localStorage.setItem(
+"pelawat",
+JSON.stringify(pelawat)
+);
+
+loadVisitors();
+}
+
+function loadVisitors(){
+
+let pelawat =
+JSON.parse(localStorage.getItem("pelawat")) || [];
+
+let html="";
+
+pelawat.reverse().forEach(p=>{
+
+html += `
+<div class="card">
+<b>${p.nama}</b><br>
+${p.komen}<br>
+<small>${p.tarikh}</small>
+</div>
+`;
+
+});
+
+let list =
+document.getElementById("visitorList");
+
+if(list){
+list.innerHTML = html;
+}
+
+}
 </script>
 </body>
 </html>
