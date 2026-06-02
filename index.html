@@ -31,7 +31,7 @@ input{width:100%;padding:14px;font-size:18px}
 <h3>Menu</h3>
 <a href="#" onclick="showPage('dashboard')">Dashboard</a>
 
-<a href="#" onclick="showPage('career')">Teroka Kerjaya</a>
+<a href="#" onclick="showPage('career')">Ensiklopedia Kerjaya</a>
 
 <a href="#" onclick="showPage('spm')">Hala Tuju Selepas SPM</a>
 
@@ -48,7 +48,7 @@ input{width:100%;padding:14px;font-size:18px}
 
 <div class="main">
 <div class="card">
-<input id="search" placeholder="Taip pekerjaan dan tekan Enter">
+<input id="search" placeholder="Cari kerjaya, contoh: doktor, jurutera AI, saintis data"
 </div>
 
 <div id="result" class="card">
@@ -119,8 +119,8 @@ document.getElementById("result").innerHTML=`
 
 if(page==="career"){
 document.getElementById("result").innerHTML=`
-<h2>Teroka Kerjaya</h2>
-<p>Taip nama kerjaya di kotak carian dan tekan Enter.</p>
+<h2>Ensiklopedia Kerjaya STEM</h2>
+<p>Cari maklumat lebih 1000 kerjaya STEM, profesional, teknikal dan TVET.</p>
 `;
 }
 
