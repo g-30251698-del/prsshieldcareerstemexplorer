@@ -32,9 +32,8 @@ input{width:100%;padding:14px;font-size:18px}
 
 <a href="#" onclick="showPage('dashboard')">Dashboard</a>
 <a href="#" onclick="showPage('career')">Ensiklopedia</a>
-<a href="#" onclick="showPage('spm')">Hala Tuju Selepas SPM</a>
 <a href="#" onclick="showPage('riasec')">Inventori Minat Kerjaya</a>
-<a href="#" onclick="showPage('tvet')">IPTA/IPTS/TVET</a>
+<a href="#" onclick="showPage('tvet')">HALA TUJU SELEPAS SPMa>
 <a href="#" onclick="showPage('biasiswa')">Biasiswa</a>
 <a href="#" onclick="showPage('future')">STEM Future Jobs</a>
 <a href="#" onclick="showPage('guru')">Dashboard Guru</a>
@@ -158,15 +157,11 @@ document.getElementById("visitorCount").innerText =
 localStorage.getItem("visits") || 1;
 }
 
-if(page==="spm"){
-document.getElementById("result").innerHTML="<h2>Hala Tuju Selepas SPM</h2><ul><li>STEM → Matrikulasi → Universiti</li><li>TVET → Kolej Kemahiran</li></ul>";
-}
-
 if(page==="riasec"){
 document.getElementById("result").innerHTML="<h2>Ujian RIASEC</h2><p>Inventori minat kerjaya akan dipaparkan di sini.</p>";
 }
 
-if(page==="tvet"){
+if(page==="HALA TUJU SELEPAS SPM"){
     document.getElementById("result").innerHTML=`
         <h2>IPTA/IPTS/TVET</h2>
         <p>Maklumat kemasukan universiti dan TVET.</p>
