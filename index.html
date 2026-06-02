@@ -187,15 +187,23 @@ document.getElementById("result").innerHTML=`
 }
 if(page==="pelawat"){
 document.getElementById("result").innerHTML=`
+
+<div class="card">
 <h2>📖 Buku Pelawat Maya</h2>
 
-<input id="visitorName" placeholder="Nama">
-<br><br>
+<p>Sila tinggalkan komen atau cadangan anda.</p>
 
-<textarea id="visitorMsg"
-placeholder="Tulis komen atau cadangan"
-rows="4"
-style="width:100%">
+<input
+id="visitorName"
+type="text"
+placeholder="Nama"
+style="width:100%;padding:10px;margin-bottom:10px;">
+
+<textarea
+id="visitorMsg"
+placeholder="Tulis komen anda"
+rows="5"
+style="width:100%;padding:10px;">
 </textarea>
 
 <br><br>
@@ -207,6 +215,9 @@ Hantar
 <hr>
 
 <div id="visitorList"></div>
+
+</div>
+
 `;
 
 loadVisitors();
