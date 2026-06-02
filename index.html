@@ -376,8 +376,11 @@ Lihat Keputusan
 
 </form>
 
+<button type="button" onclick="kiraRIASEC()">
+Lihat Keputusan
+</button>
+
 <div id="keputusanRIASEC"></div>
-`;
 }
  
 if(page==="tvet"){
@@ -399,6 +402,27 @@ document.getElementById("result").innerHTML="<h2>Dashboard Guru</h2><p>Statistik
 if(page==="career"){
 document.getElementById("search").focus();
 }
+
+}
+ function kiraRIASEC(){
+
+let R = document.querySelectorAll('input[name="R"]:checked').length;
+let I = document.querySelectorAll('input[name="I"]:checked').length;
+let A = document.querySelectorAll('input[name="A"]:checked').length;
+let S = document.querySelectorAll('input[name="S"]:checked').length;
+let E = document.querySelectorAll('input[name="E"]:checked').length;
+let C = document.querySelectorAll('input[name="C"]:checked').length;
+
+document.getElementById("keputusanRIASEC").innerHTML = `
+<h3>Keputusan Inventori Minat Kerjaya</h3>
+
+<p>Realistik (R): ${R}</p>
+<p>Investigatif (I): ${I}</p>
+<p>Artistik (A): ${A}</p>
+<p>Sosial (S): ${S}</p>
+<p>Enterprising (E): ${E}</p>
+<p>Konvensional (C): ${C}</p>
+`;
 
 }
 </script>
