@@ -104,6 +104,99 @@ document.getElementById('search').addEventListener('keypress', function(e){
    '<h2>Tiada rekod</h2><p>Tambah data JSON untuk mencapai 1000+ kerjaya.</p>';
  }
 });
+ function showPage(page){
+
+if(page==="dashboard"){
+document.getElementById("result").innerHTML=`
+<h2>Selamat Datang</h2>
+<p>Carian contoh: jurutera ai, doktor, saintis data, pakar keselamatan siber</p>
+`;
+}
+
+if(page==="career"){
+document.getElementById("result").innerHTML=`
+<h2>Teroka Kerjaya</h2>
+<p>Taip nama kerjaya di kotak carian dan tekan Enter.</p>
+`;
+}
+
+if(page==="spm"){
+document.getElementById("result").innerHTML=`
+<h2>Hala Tuju Selepas SPM</h2>
+<ul>
+<li>STEM → Matrikulasi → Universiti</li>
+<li>TVET → Kolej Kemahiran → Industri</li>
+<li>Diploma → Ijazah</li>
+</ul>
+`;
+}
+
+if(page==="tvet"){
+document.getElementById("result").innerHTML=`
+<h2>IPTA/IPTS/TVET</h2>
+<p><a href="https://upu.mohe.gov.my" target="_blank">UPU Online</a></p>
+<p><a href="https://www.tvet.gov.my" target="_blank">TVET Malaysia</a></p>
+`;
+}
+
+if(page==="biasiswa"){
+document.getElementById("result").innerHTML=`
+<h2>Biasiswa</h2>
+<p><a href="https://biasiswa.mohe.gov.my" target="_blank">Biasiswa KPT</a></p>
+<p><a href="https://www.jpa.gov.my" target="_blank">Biasiswa JPA</a></p>
+`;
+}
+
+if(page==="future"){
+document.getElementById("result").innerHTML=`
+<h2>STEM Future Jobs</h2>
+<ul>
+<li>AI Engineer</li>
+<li>Data Scientist</li>
+<li>Cyber Security Analyst</li>
+<li>Robotics Engineer</li>
+<li>Aerospace Engineer</li>
+</ul>
+`;
+}
+
+if(page==="guru"){
+document.getElementById("result").innerHTML=`
+<h2>Dashboard Guru</h2>
+<p>Jumlah Kerjaya: 100</p>
+<p>Status: Aktif</p>
+`;
+}
+
+if(page==="riasec"){
+document.getElementById("result").innerHTML=`
+<h2>Inventori Minat Kerjaya (RIASEC)</h2>
+
+<p>1. Saya suka membaiki mesin.
+<button onclick="score('R')">Ya</button></p>
+
+<p>2. Saya suka eksperimen sains.
+<button onclick="score('I')">Ya</button></p>
+
+<p>3. Saya suka melukis dan mencipta.
+<button onclick="score('A')">Ya</button></p>
+
+<p>4. Saya suka membantu orang lain.
+<button onclick="score('S')">Ya</button></p>
+
+<p>5. Saya suka berniaga.
+<button onclick="score('E')">Ya</button></p>
+
+<p>6. Saya suka kerja teratur.
+<button onclick="score('C')">Ya</button></p>
+
+<div id="riasecResult"></div>
+
+<button onclick="showResult()">Lihat Keputusan</button>
+`;
+}
+
+}
 </script>
 </body>
 </html>
