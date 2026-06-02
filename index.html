@@ -112,11 +112,23 @@ document.getElementById('search').addEventListener('keypress', function(e){
 
 if(page==="dashboard"){
 document.getElementById("result").innerHTML=`
-<h2>Selamat Datang</h2>
-<p>Carian contoh: jurutera ai, doktor, saintis data, pakar keselamatan siber</p>
-`;
-}
+<h2>🏠 Laman Utama</h2>
 
+<p>Selamat datang ke PRS SHIELD Career STEM Explorer™</p>
+
+<div class="card">
+<h3>📊 Statistik Portal</h3>
+
+<p>👥 Jumlah Pengunjung: <span id="visitorCount"></span></p>
+
+<p>📚 Ensiklopedia Kerjaya STEM</p>
+<p>🧭 Hala Tuju Selepas SPM</p>
+<p>📝 Inventori Minat Kerjaya (RIASEC)</p>
+<p>🎓 Biasiswa & Bantuan Pendidikan</p>
+</div>
+`;
+document.getElementById("visitorCount").innerText = localStorage.getItem("visitorCount") || 1;
+}
 if(page==="career"){
 document.getElementById("result").innerHTML=`
 <h2>Ensiklopedia Kerjaya STEM</h2>
@@ -282,6 +294,15 @@ document.getElementById("riasecResult").innerHTML=
 "<h3>Kod Dominan: "+result+"</h3>"+
 "<p><b>Cadangan Kerjaya:</b> "+career+"</p>";
 }
+ let visitorCount = localStorage.getItem("visitorCount");
+
+if(visitorCount === null){
+visitorCount = 1;
+}else{
+visitorCount = parseInt(visitorCount) + 1;
+}
+
+localStorage.setItem("visitorCount", visitorCount);
 </script>
 </body>
 </html>
