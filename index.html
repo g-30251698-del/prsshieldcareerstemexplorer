@@ -22,7 +22,7 @@ input{width:100%;padding:14px;font-size:18px}
 <body>
 <header>
 <h1>PRS SHIELD Career STEM Explorer™</h1>
-<p>SM Sains Lahad Datu (SHIELD) | prsshieldcareer.edu.my</p>
+<p>SM Sains Lahad Datu (SHIELD) | We Are Here To Mould The Future</p>
 </header>
 
 <div class="wrap">
@@ -31,9 +31,9 @@ input{width:100%;padding:14px;font-size:18px}
 <h3>Menu</h3>
 
 <a href="#" onclick="showPage('dashboard')">Dashboard</a>
-<a href="#" onclick="showPage('career')">Teroka Kerjaya</a>
+<a href="#" onclick="showPage('career')">Ensiklopedia</a>
 <a href="#" onclick="showPage('spm')">Hala Tuju Selepas SPM</a>
-<a href="#" onclick="showPage('riasec')">Ujian RIASEC</a>
+<a href="#" onclick="showPage('riasec')">Inventori Minat Kerjaya</a>
 <a href="#" onclick="showPage('tvet')">IPTA/IPTS/TVET</a>
 <a href="#" onclick="showPage('biasiswa')">Biasiswa</a>
 <a href="#" onclick="showPage('future')">STEM Future Jobs</a>
@@ -105,7 +105,60 @@ document.getElementById('search').addEventListener('keypress', function(e){
  function showPage(page){
 
 if(page==="dashboard"){
-document.getElementById("result").innerHTML="<h2>Dashboard</h2><p>Selamat datang ke Dashboard PRS SHIELD.</p>";
+document.getElementById("result").innerHTML=`
+<h2>📊 Dashboard PRS SHIELD</h2>
+
+<div class="card">
+<h3>Statistik Pengunjung</h3>
+
+<p>👥 Jumlah Pengunjung:
+<span id="visitorCount"></span></p>
+
+<p>📅 Tarikh Hari Ini:
+${new Date().toLocaleDateString('ms-MY')}</p>
+
+<p>⏰ Masa Semasa:
+${new Date().toLocaleTimeString('ms-MY')}</p>
+
+</div>
+
+<div class="card">
+<h3>Analisis Minat Kerjaya</h3>
+
+<p>🤖 AI & Data Science</p>
+<div style="background:#ddd;height:20px;border-radius:10px;">
+<div style="width:75%;background:#4CAF50;height:20px;border-radius:10px;"></div>
+</div>
+
+<p>🔒 Cyber Security</p>
+<div style="background:#ddd;height:20px;border-radius:10px;">
+<div style="width:60%;background:#2196F3;height:20px;border-radius:10px;"></div>
+</div>
+
+<p>⚙️ Kejuruteraan</p>
+<div style="background:#ddd;height:20px;border-radius:10px;">
+<div style="width:80%;background:#FF9800;height:20px;border-radius:10px;"></div>
+</div>
+
+</div>
+
+<div class="card">
+<h3>Kerjaya Popular</h3>
+<ul>
+<li>AI Engineer</li>
+<li>Data Scientist</li>
+<li>Cyber Security Analyst</li>
+<li>Robotics Engineer</li>
+<li>Aerospace Engineer</li>
+</ul>
+</div>
+`;
+
+document.getElementById("visitorCount").innerText =
+localStorage.getItem("visits") || 1;
+}
+document.getElementById("visitorCount").innerText =
+localStorage.getItem("visits") || 1;
 }
 
 if(page==="spm"){
