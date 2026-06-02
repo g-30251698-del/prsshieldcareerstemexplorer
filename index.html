@@ -168,31 +168,24 @@ document.getElementById("result").innerHTML=`
 `;
 }
 
+function showPage(page){
+
 if(page==="riasec"){
-document.getElementById("result").innerHTML=`
+document.getElementById("result").innerHTML = `
 <h2>Inventori Minat Kerjaya (RIASEC)</h2>
 
-<p>1. Saya suka membaiki mesin.
-<button onclick="score('R')">Ya</button></p>
+<p>Jawab Ya atau Tidak.</p>
 
-<p>2. Saya suka eksperimen sains.
-<button onclick="score('I')">Ya</button></p>
+<label><input type="checkbox" id="r1"> Saya suka membaiki mesin.</label><br>
+<label><input type="checkbox" id="i1"> Saya suka eksperimen sains.</label><br>
+<label><input type="checkbox" id="a1"> Saya suka melukis atau mereka bentuk.</label><br>
+<label><input type="checkbox" id="s1"> Saya suka membantu orang.</label><br>
+<label><input type="checkbox" id="e1"> Saya suka memimpin kumpulan.</label><br>
+<label><input type="checkbox" id="c1"> Saya suka kerja tersusun.</label><br><br>
 
-<p>3. Saya suka melukis dan mencipta.
-<button onclick="score('A')">Ya</button></p>
-
-<p>4. Saya suka membantu orang lain.
-<button onclick="score('S')">Ya</button></p>
-
-<p>5. Saya suka berniaga.
-<button onclick="score('E')">Ya</button></p>
-
-<p>6. Saya suka kerja teratur.
-<button onclick="score('C')">Ya</button></p>
+<button onclick="kiraRIASEC()">Lihat Keputusan</button>
 
 <div id="riasecResult"></div>
-
-<button onclick="showResult()">Lihat Keputusan</button>
 `;
 }
 
