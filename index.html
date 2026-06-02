@@ -359,13 +359,25 @@ komen:komen,
 tarikh:new Date().toLocaleDateString()
 });
 
-localStorage.setItem(
-"pelawat",
-JSON.stringify(pelawat)
-);
-
-loadVisitors();
-}
+fetch("https://script.google.com/macros/s/AKfycbxgjL1dDDQWW7ZXhos6PoHYMmzs1uxnNbXtHaC0sg-FeB1X-j8cIpDJ0-1e4J-9_F8w/exec", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    nama: nama,
+    sekolah: "PRS SHIELD",
+    komen: komen
+  })
+})
+.then(response => response.json())
+.then(data => {
+  alert("Terima kasih kerana mengisi Buku Pelawat!");
+})
+.catch(error => {
+  console.error(error);
+  alert("Ralat menyimpan data.");
+});
 
 function loadVisitors(){
 
