@@ -47,8 +47,39 @@ footer{background:#2E005F;color:white;text-align:center;padding:18px}
 </aside>
 <main class="main">
 <div class="card">
-<h2>Selamat Datang</h2>
-<p>Portal rasmi UBK & PRS SHIELD untuk penerokaan kerjaya STEM.</p>
+<div class="card">
+    <h2>📊 Analisis Pengunjung</h2>
+
+    <p>Jumlah Lawatan: <span id="totalVisits">0</span></p>
+
+    <p>Lawatan Hari Ini: <span id="todayVisits">0</span></p>
+
+    <p>Lawatan Terakhir: <span id="lastVisit">-</span></p>
+</div>
+
+<br>
+
+<div class="card">
+
+    <h2>📖 Buku Pelawat Maya</h2>
+
+    <input
+        type="text"
+        id="visitorName"
+        placeholder="Nama">
+
+    <textarea
+        id="visitorComment"
+        placeholder="Tulis komen anda">
+    </textarea>
+
+    <button onclick="addVisitor()">
+        Hantar Komen
+    </button>
+
+    <br><br>
+
+    <ul id="visitorList"></ul>
 </div>
 </main>
 </div>
