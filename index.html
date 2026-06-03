@@ -154,56 +154,157 @@ footer{background:#2E005F;color:white;text-align:center;padding:18px}
 <p>Sekolah Menengah Sains Lahad Datu</p>
 </footer>
  .card{
-    background:white;
-    padding:20px;
-    border-radius:15px;
-    margin-bottom:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+ <script>
+
+function visitorAnalytics(){
+
+    let totalVisits =
+        localStorage.getItem("totalVisits") || 0;
+
+    totalVisits++;
+
+    localStorage.setItem(
+        "totalVisits",
+        totalVisits
+    );
+
+    document.getElementById(
+        "totalVisits"
+    ).innerText = totalVisits;
+
+    let today =
+        new Date().toLocaleDateString();
+
+    let savedDate =
+        localStorage.getItem("visitDate");
+
+    let todayVisits =
+        localStorage.getItem("todayVisits") || 0;
+
+    if(savedDate === today){
+
+        todayVisits++;
+
+    }else{
+
+        todayVisits = 1;
+
+        localStorage.setItem(
+            "visitDate",
+            today
+        );
+    }
+
+    localStorage.setItem(
+        "todayVisits",
+        todayVisits
+    );
+
+    document.getElementById(
+        "todayVisits"
+    ).innerText = todayVisits;
+
+    document.getElementById(
+        "lastVisit"
+    ).innerText =
+        new Date().toLocaleString();
 }
 
-input,
-textarea{
+function addVisitor(){
 
-    width:100%;
-    padding:12px;
-    margin-top:10px;
-    margin-bottom:10px;
+    let name =
+        document.getElementById(
+            "visitorName"
+        ).value;
 
-    border:1px solid #ddd;
-    border-radius:10px;
+    let comment =
+        document.getElementById(
+            "visitorComment"
+        ).value;
+
+    if(name === "" || comment === ""){
+
+        alert("Sila isi nama dan komen");
+
+        return;
+    }
+
+    let visitors =
+        JSON.parse(
+            localStorage.getItem(
+                "visitors"
+            )
+        ) || [];
+
+    visitors.push({
+
+        name:name,
+        comment:comment,
+        date:new Date()
+            .toLocaleString()
+    });
+
+    localStorage.setItem(
+
+        "visitors",
+
+        JSON.stringify(
+            visitors
+        )
+    );
+
+    loadVisitors();
+
+    document.getElementById(
+        "visitorName"
+    ).value = "";
+
+    document.getElementById(
+        "visitorComment"
+    ).value = "";
 }
 
-button{
+function loadVisitors(){
 
-    background:#6A0DAD;
-    color:white;
+    let visitors =
+        JSON.parse(
+            localStorage.getItem(
+                "visitors"
+            )
+        ) || [];
 
-    border:none;
-    padding:12px 20px;
+    let html = "";
 
-    border-radius:10px;
-    cursor:pointer;
+    visitors.reverse().forEach(v => {
+
+        html += `
+
+        <li>
+
+            <strong>${v.name}</strong>
+
+            <br>
+
+            ${v.comment}
+
+            <br>
+
+            <small>${v.date}</small>
+
+        </li>
+
+        `;
+    });
+
+    document.getElementById(
+        "visitorList"
+    ).innerHTML = html;
 }
 
-button:hover{
-    background:#4B0082;
-}
+visitorAnalytics();
 
-#visitorList{
+loadVisitors();
 
-    padding:0;
-}
-
-#visitorList li{
-
-    list-style:none;
-
-    background:#f4f4f4;
-
-    margin-bottom:10px;
-    padding:12px;
-
-    border-radius:10px;
-}
+</script>
 </body>
 </html>
